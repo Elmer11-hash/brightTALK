@@ -1,0 +1,409 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fb; /* Softer background color */
+  color: #444; /* Slightly darker text for better readability */
+  line-height: 1.6;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  margin: 20px 0;
+  color: #1f2a44; /* Darker shade of blue for headers */
+}
+p {
+  font-weight: 400;
+  color: #666; /* Lighter text color for paragraphs */
+}
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px; /* Slightly smaller padding */
+  background-color: #0077cc; /* Softer blue color */
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #00aaff; /* Darker blue for hover */
+}
+
+/* Header Section */
+header {
+  background-color: #ffed86; /* Darker and more professional tone */
+  color: rgb(0, 0, 0) !important;
+  padding: 15px 0; /* Reduced padding for a cleaner look */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 32px; /* Slightly smaller font size */
+  margin: 0;
+  color: #000000;
+}
+header nav {
+  font-size: 16px; /* Reduced font size */
+}
+header nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+header nav a:hover {
+  color: #00aaff; /* Softer hover color */
+}
+header .cta-button {
+  display: none;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 70px 0 50px; /* Adjusted padding */
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
+  margin-top: 70px;
+}
+.why-choose-us .section-title {
+  font-size: 26px; /* Slightly smaller font size */
+  color: #0a3d40; /* Softer shade of teal */
+  margin-bottom: 20px;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Reduced gap for a tighter layout */
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px; /* Slightly smaller padding */
+  width: 260px; /* Reduced width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer hover shadow */
+}
+.card h3 {
+  font-size: 18px; /* Smaller heading font size */
+  margin-bottom: 15px;
+  color: #0077cc; /* Softer blue color */
+}
+.card ul {
+  text-align: left;
+  padding-left: 20px;
+  color: #555;
+}
+.card ul li {
+  margin-bottom: 8px; /* Reduced spacing */
+  font-size: 13px; /* Slightly smaller font size */
+}
+
+/* Plan Section */
+.plan-section {
+  padding: 45px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+.plan-section .section-title {
+  font-size: 26px; /* Slightly smaller font size */
+  margin-bottom: 20px;
+}
+.plans-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Reduced gap */
+  flex-wrap: wrap;
+}
+.plan-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 25px; /* Slightly reduced padding */
+  width: 260px; /* Smaller width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer hover effect */
+}
+.plan-card h3 {
+  font-size: 22px; /* Smaller heading size */
+  color: #00aaff;
+  margin-bottom: 15px;
+}
+.plan-card p {
+  font-size: 15px; /* Reduced font size */
+  color: #555;
+  margin-bottom: 15px;
+}
+.plan-card .price {
+  font-size: 16px; /* Reduced font size */
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+.plan-card .cta-button {
+  background-color: #0077cc;
+  color: white;
+}
+
+/* Programs Section */
+.programs {
+  padding: 45px 0;
+  background-color: #f7f9fb; /* Softer background */
+  text-align: center;
+}
+.programs .section-title {
+  font-size: 26px; /* Slightly smaller font size */
+  margin-bottom: 20px;
+}
+.programs .cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.programs .card {
+  background-color: #ffffff;
+  padding: 20px; /* Slightly smaller padding */
+  width: 260px; /* Smaller width */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.programs .card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow effect */
+}
+.programs .card h3 {
+  font-size: 18px; /* Reduced heading size */
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+/* Webex Section */
+.webex-section {
+  padding: 45px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+.webex-section .section-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.webex-section p {
+  font-size: 14px; /* Smaller font size */
+  color: #555;
+  margin-bottom: 20px;
+}
+.webex-section a {
+  color: #00aaff;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.webex-section a:hover {
+  color: #00aaff;
+  text-decoration: underline;
+}
+
+/* Payment Section */
+.payment-options {
+  padding: 45px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+.payment-options .payment-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Reduced gap */
+  flex-wrap: wrap;
+}
+.payment-options .payment-card {
+  background-color: #f8f9fa;
+  padding: 15px; /* Smaller padding */
+  border-radius: 8px;
+  width: 230px; /* Smaller width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.payment-options .payment-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow effect */
+}
+.payment-options h3 {
+  font-size: 22px; /* Slightly smaller font size */
+  margin-bottom: 30px;
+  color: #1f2a44;
+}
+.payment-options .payment-card h4 {
+  font-size: 18px; /* Smaller heading size */
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 45px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact input,
+.contact textarea {
+  width: 280px; /* Slightly narrower input */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px; /* Smaller font size */
+  transition: border-color 0.3s ease;
+}
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #0077cc;
+}
+.contact button {
+  padding: 10px 20px; /* Smaller button size */
+  background-color: #0077cc;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact button:hover {
+  background-color: #00aaff;
+}
+
+/* Footer Section */
+footer {
+  padding: 15px 0; /* Reduced padding */
+  text-align: center;
+  background-color: #9b9b9b;
+  color: rgb(255, 255, 255);
+}
+footer p {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #00aaff;
+}
+
+/* Plan Details Section */
+#plan-details {
+  background-color: #fff;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+
+/* Plan Details h3 */
+#plan-details h3 {
+  color: #00b3b3; /* Teal color for the heading */
+  font-size: 2rem; /* Larger font size for visibility */
+  font-weight: 700; /* Bold font weight */
+  margin-bottom: 15px; /* Spacing below the heading */
+  text-align: left; /* Center the heading */
+  letter-spacing: 1px; /* Slightly increase spacing between letters */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+#plan-details p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+#plan-details .price {
+  font-size: 1.8rem;
+  color: #e74c3c;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#plan-details ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#plan-details ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#plan-details ul li strong {
+  color: #333;
+}
+
+/* Call to Action Button */
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #00b3b3;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #00aaff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header nav a {
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+
+  #plan-details h2,
+  #plan-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
